@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - "main"
+    # Build when changes to TypeScript files are made
+    paths:
+      - '**.ts'
 
 jobs:
   build:
